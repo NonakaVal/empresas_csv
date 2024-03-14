@@ -61,7 +61,7 @@ def select_file_dialog(mode='open', default_extension=".csv"):
 def main():
     initial_file = select_file_dialog('open')
     place_ids = load_place_ids(initial_file)
-    api_key = 'AIzaSyAomt6rv2nL7Et8uc61OF8nBp91MLilVJ0'
+    api_key = ''
     local_infos = get_local_info(place_ids, api_key)
 
     temp_csv_file = 'temp_info.csv'
